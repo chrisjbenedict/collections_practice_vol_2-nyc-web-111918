@@ -18,5 +18,4 @@ def first_wa(arr)
       return i
     end
   end
-  break
 end
