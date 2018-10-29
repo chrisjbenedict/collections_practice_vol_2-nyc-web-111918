@@ -8,7 +8,6 @@ def begin_with_r(arr)
     if arr2.length == arr.length
       return true
     end
-    return false
 end
 
 def contain_a(arr)
