@@ -24,6 +24,7 @@ def remove_non_strings(arr)
   arr.delete_if {|item| item != item.to_s}
 end
 
+#https://stackoverflow.com/questions/37441604/count-how-many-times-something-appears-in-an-array
 def count_elements(arr)
   arr.group_by(&:itself).map{|name, count| name.merge(count: count.length)}
 end
