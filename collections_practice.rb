@@ -38,5 +38,5 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  schools.sort_by!(&:location)
+  schools.sort_by!{&:location}
 end
