@@ -9,5 +9,5 @@ def begins_with_r(arr)
 end
 
 def contain_a(arr)
-
+  return arr.select { |word| word.include?('a')}
 end
