@@ -26,6 +26,6 @@ end
 
 def count_elements(arr)
   for i in arr
-    arr.count(arr[i])
+    arr.count(i)
   end
 end
