@@ -38,6 +38,5 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  schools.each_with_object({}) do |(name, data), res|
-    (res[data[:location]] || = []) << name
+  schools.sort_by(&:location)
 end
