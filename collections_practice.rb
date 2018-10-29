@@ -30,5 +30,5 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  keys.concat(data)
+  keys.merge(data)
 end
