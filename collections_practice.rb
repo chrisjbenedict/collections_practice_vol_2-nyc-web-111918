@@ -37,6 +37,16 @@ def find_cool(arr)
   arr.select {|name| name[:temperature] == "cool"}
 end
 
-def organized_schools(schools)
-  schools.sort_by { |name, location| location }
+def organize_schools(schools)
+  organized_schools = {}
+  schools.each do |name, location_hash|
+    location = location_hash[:location]
+    if organized_schools[location]
+      organized_schools[location] << name
+    else
+      organized_schools[location] = []
+      organized_schools[location] << name
+    end
+  end
+  organized_schools
 end
