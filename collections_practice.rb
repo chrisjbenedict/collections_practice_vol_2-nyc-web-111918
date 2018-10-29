@@ -2,7 +2,7 @@
 def begin_with_r(arr)
   i = 0
   while i < arr.length
-    arr2 = arr.split('')
+    arr2 = arr[i].split('')
     if arr2.first == 'r'
       return true
     else
