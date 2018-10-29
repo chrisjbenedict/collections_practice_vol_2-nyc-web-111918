@@ -23,3 +23,9 @@ end
 def remove_non_strings(arr)
   arr.delete_if {|item| item != item.to_s}
 end
+
+def count_elements(arr)
+  for i in arr 
+    arr.count(arr[i])
+  end
+end
