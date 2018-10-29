@@ -11,3 +11,12 @@ end
 def contain_a(arr)
   return arr.select { |word| word.include?('a')}
 end
+
+def first_wa(arr)
+  for i in arr
+    if i[0] == "w" and i[1] == "a"
+      return i
+    end
+    break
+  end
+end
