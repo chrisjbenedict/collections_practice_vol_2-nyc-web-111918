@@ -1,9 +1,9 @@
 # your code goes here
 def begin_with_r(arr)
   for i in arr
-    if i.startWith("r")
+    if i.startsWith("r")
       true
-    else 
+    else
       false
     end
   end
