@@ -37,6 +37,6 @@ def find_cool(arr)
   arr.select {|name| name[:temperature] == "cool"}
 end
 
-def organize_schools(schools)
+def organized_schools(schools)
   schools.sort_by { |name, location| location }
 end
