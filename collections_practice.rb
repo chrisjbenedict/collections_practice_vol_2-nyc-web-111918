@@ -32,4 +32,3 @@ end
 def merge_data(keys, data)
   keys.concat(data)
 end
-  
