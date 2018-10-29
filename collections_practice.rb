@@ -1,11 +1,9 @@
 # your code goes here
 def begin_with_r(arr)
-  arr.each do |i| 
-    if i[0] != "r"
-      return false
-    end
+  arr2 = arr.select { |word| word.start_with?('r')}
+  if arr2.length == arr.length
+    return true
   end
-  return true
 end
 
 def contain_a(arr)
