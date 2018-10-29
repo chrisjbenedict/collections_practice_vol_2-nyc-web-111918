@@ -1,15 +1,12 @@
 # your code goes here
 def begin_with_r(arr)
-  rArray = []
+
+end
+
+def contain_a(arr)
   for i in arr
-    d = arr[i].split('')
-    if d.first == "r"
-      rArray << d
+    if arr[i].include?('a')
+      return arr[i]
     end
-  end
-  if rArray.length == arr.length
-    return true
-  else
-    return false
   end
 end
