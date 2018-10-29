@@ -24,7 +24,12 @@ def remove_non_strings(arr)
   arr.delete_if {|item| item != item.to_s}
 end
 
-#https://stackoverflow.com/questions/37441604/count-how-many-times-something-appears-in-an-array
 def count_elements(arr)
-  arr.group_by(&:itself).map{|name, count| name.merge(count: count.length)}
+  arr.group_by(&:itself) #group identical elements together (i.e. {'blake', 'blake'}, {'ashley'})
+  .map{|name, count| name.merge(count: count.length)} #add 'count' element to hash and merge two hashes together
 end
+
+def merge_data(keys, data)
+  keys.concat(data)
+end
+  
