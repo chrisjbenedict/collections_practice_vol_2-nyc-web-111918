@@ -30,5 +30,5 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  keys.concat(data)
+  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
 end
