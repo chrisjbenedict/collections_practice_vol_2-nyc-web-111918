@@ -1,13 +1,11 @@
 # your code goes here
 def begin_with_r(arr)
-  arr2 = []
-  arr.each do |item|
-    if item[0] == "r"
-      arr2.push(item)
+  for i in arr 
+    if i[0] != "r"
+      return false
     end
-    if arr2.length == arr.length
-      return true
-    end
+  end
+  return true
 end
 
 def contain_a(arr)
