@@ -17,6 +17,5 @@ def first_wa(arr)
     if i[0] == "w" and i[1] == "a"
       return i
     end
-    break
   end
 end
