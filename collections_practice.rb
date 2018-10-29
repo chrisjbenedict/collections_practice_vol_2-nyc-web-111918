@@ -25,7 +25,5 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  for i in arr
-    arr.count(i)
-  end
+  arr.group_by(&:itself).map{|name, count| name.merge(count: count.length)}
 end
