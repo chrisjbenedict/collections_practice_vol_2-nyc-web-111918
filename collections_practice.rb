@@ -25,7 +25,7 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  for i in arr 
+  for i in arr
     arr.count(arr[i])
   end
 end
