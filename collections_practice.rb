@@ -12,5 +12,5 @@ def begin_with_r(arr)
 end
 
 def contain_a(arr)
-  
+
 end
