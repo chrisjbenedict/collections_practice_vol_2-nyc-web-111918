@@ -5,7 +5,8 @@ end
 
 def contain_a(arr)
   for i in arr
-    if arr[i].include?('a')
+    d = arr[i].split('')
+    if d.include?('a')
       return arr[i]
     end
   end
