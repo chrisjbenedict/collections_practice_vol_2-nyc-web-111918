@@ -38,7 +38,15 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  hash.each_with_object({}) do |(name, data), res|
-  (res[data[:location]] ||= []) << name
+  organized_schools = {}
+  schools.each do |name, location_hash|
+    location = location_hash[:location]
+    if organized_schools[location]
+      organized_schools[location] << name
+    else
+      organized_schools[location] = []
+      organized_schools[location] << name
+    end
   end
+  organized_schools
 end
